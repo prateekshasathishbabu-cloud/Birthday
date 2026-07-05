@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Nanaaaaa❤️❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#89f7fe,#66a6ff);
+    min-height:100vh;
+    text-align:center;
+    overflow-x:hidden;
+    color:white;
+}
+
+.container{
+    padding:30px;
+}
+
+.photo{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    margin-top:20px;
+    box-shadow:0 0 20px rgba(255,255,255,0.8);
+    animation:float 3s ease-in-out infinite;
+}
+
+h1{
+    margin-top:20px;
+    font-size:3rem;
+    animation:bounce 2s infinite;
+}
+
+.heart{
+    font-size:50px;
+    animation:beat 1s infinite;
+}
+
+button{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+    background:white;
+    color:#333;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.card{
+    width:85%;
+    max-width:700px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+}
+
+.hidden{
+    display:none;
+}
+
+.cake{
+    font-size:100px;
+}
+
+.firework{
+    position:fixed;
+    font-size:35px;
+    animation:explode 2s linear forwards;
+}
+
+.balloon{
+    position:fixed;
+    bottom:-100px;
+    font-size:45px;
+    animation:rise 10s linear infinite;
+}
+
+@keyframes rise{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+@keyframes beat{
+    50%{
+        transform:scale(1.3);
+    }
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+@keyframes float{
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+@keyframes explode{
+    from{
+        transform:translateY(0) scale(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-300px) scale(2);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<audio id="song" loop>
+    <source src="Birthday song.mpeg" type="audio/mpeg">
+</audio>
+
+<div class="balloon" style="left:10%">🎈</div>
+<div class="balloon" style="left:30%;animation-delay:2s;">🎈</div>
+<div class="balloon" style="left:50%;animation-delay:4s;">🎈</div>
+<div class="balloon" style="left:70%;animation-delay:6s;">🎈</div>
+<div class="balloon" style="left:90%;animation-delay:8s;">🎈</div>
+
+<div class="container">
+
+<img src="bday pic.jpeg" class="photo" alt="Dad">
+
+<h1>🎉 Happy Birthday Nanaaaa!!!! 🎉</h1>
+
+<div class="heart">❤️</div>
+
+<h3>You are my hero, my guide, and my biggest supporter Saranghaeyo!!!!❤️❤️❤️❤️</h3>
+
+<br>
+
+<button onclick="openGift()">🎁 Open Gift</button>
+<button onclick="showMemory()">📸 Memories</button>
+<button onclick="showLetter()">💌 Read My Letter</button>
+<button onclick="showVoiceMessage()">🎤 Special Message</button>
+<button onclick="playSong()">🎵 Play Music</button>
+<button onclick="blowCandles()">🎂 Blow Candles</button>
+
+<div id="gift" class="card hidden">
+    <h2>🎁Surprise!!!!🎁</h2>
+    <p>
+        <p>
+    Nanaaaa,<br><br>
+
+    If I had one lifetime to thank you,
+    it still wouldn't be enough for everything you've done for me.<br><br>
+
+    Thank you for every sacrifice no one noticed,
+    every worry you kept to yourself,
+    every dream you put aside so mine could come true,
+    and every moment you stood beside me through life's ups and downs.<br><br>
+
+    You taught me strength, kindness, honesty, and courage.
+    Everything good in me began with you.<br><br>
+
+    I hope one day I can become even half the person you are.
+    Thank you for being the best father anyone could ever ask for.
+    I love you with all my heart. ❤️
+</p>
+    </p>
+</div>
+
+<div id="memory" class="card hidden">
+    <h2>📸Our Memories📸</h2>
+    <p>
+        <p>
+    Nanaaaa,<br><br>
+
+    Every laugh we've shared, every trip we've taken,
+    every late-night conversation, every silly joke,
+    and every little moment with you has become a memory
+    I'll treasure forever.<br><br>
+
+    Some of my happiest memories exist because of you,
+    and I can't wait to make many more together.
+    I still have a long bucket list of places I want us to explore—
+    not just around our country, but around the world too. 🌍✈️<br><br>
+
+    So... please take good care of your health, okay?
+    I need my favorite travel partner around for all those adventures.
+    We still have too many photos to take, too many foods to try,
+    and moments waiting for us. 😂<br><br>
+
+    Thank you for making life so beautiful, for filling it with love,
+    laughter, and memories I'll carry forever.
+    No matter where life takes us, you'll always be my favorite person
+    to come home to. ❤️
+</p>
+    </p>
+</div>
+
+<div id="letter" class="card hidden">
+
+    <h2>💌Dear Nanaaaa💌,</h2>
+
+    <p>
+        Happy Birthday, Nanaaaa!!!! ❤️<br><br>
+
+        Today is all about celebrating the most amazing person in my life.
+        Thank you for every sacrifice you've made, every lesson you've taught me,
+        and every silent prayer you've said for me.
+        I know many of the things you've done for our family went unnoticed,
+        but I want you to know that I see them, I appreciate them,
+        and I'll never take them for granted.<br><br>
+
+        Thank you for believing in me even when I didn't believe in myself.
+        Your words gave me confidence, your strength gave me courage,
+        and your love made me the person I am today.
+        No matter how old I get, I'll always look up to you.<br><br>
+
+        I hope this year brings you good health, endless happiness,
+        and countless reasons to smile.
+        I still have so many dreams I want to share with you,
+        so please stay healthy because we have many more adventures,
+        trips, and memories waiting for us. 🌍✈️<br><br>
+
+        If one day I become even half the person you are,
+        I'll consider my life a success.
+        Thank you for being my hero, my role model,
+        and the best dad anyone could ever ask for.<br><br>
+
+        I love you more than words can ever express.
+        Happy Birthday, Nanaaaa. ❤️🎂<br><br>
+
+        ❤️ Love You Always ❤️
+    </p>
+
+</div>
+
+<div id="voiceMessage" class="card hidden">
+    <h2>🎤 Voice Message</h2>
+
+    <p>From Mom❤️❤️</p>
+
+    <audio controls>
+        <source src="Voice 1.ogg" type="audio/ogg">
+    </audio>
+
+    <br><br>
+
+    <p>From me😎❤️</p>
+
+    <audio controls>
+        <source src="Voice 2.ogg" type="audio/ogg">
+    </audio>
+</div>
+
+<div class="card">
+    <div id="cake" class="cake">🎂</div>
+    <h3 id="wish">Make a Birthday Wish Nanaaaa!!!!!</h3>
+</div>
+
+</div>
+
+<script>
+
+function openGift(){
+    document.getElementById("gift").classList.remove("hidden");
+    document.getElementById("song").play();
+}
+
+function showMemory(){
+    document.getElementById("memory").classList.remove("hidden");
+}
+
+function showLetter(){
+    document.getElementById("letter").classList.remove("hidden");
+}
+
+function showVoiceMessage(){
+    document.getElementById("voiceMessage").classList.remove("hidden");
+}
+
+function playSong(){
+    document.getElementById("song").play();
+}
+
+function blowCandles(){
+
+    document.getElementById("cake").innerHTML = "🍰";
+
+    document.getElementById("wish").innerHTML =
+    "🎉 Happy Birthday Nanaaaa!!!! Wish Granted! 🎉";
+
+    fireworks();
+}
+
+function fireworks(){
+
+    let emojis = ["🎆","✨","🎇","🎉","⭐"];
+
+    for(let i=0;i<40;i++){
+
+        let fire = document.createElement("div");
+
+        fire.className = "firework";
+
+        fire.innerHTML =
+        emojis[Math.floor(Math.random()*emojis.length)];
+
+        fire.style.left =
+        Math.random()*100 + "vw";
+
+        fire.style.top =
+        Math.random()*100 + "vh";
+
+        document.body.appendChild(fire);
+
+        setTimeout(()=>{
+            fire.remove();
+        },2000);
+    }
+}
+
+</script>
+
+</body>
+</html>
